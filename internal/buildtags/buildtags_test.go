@@ -42,7 +42,7 @@ func TestTags(t *testing.T) {
 			t.Errorf("ReleaseTags contains %q; see the comment in buildtags.go", notWant)
 		}
 	}
-	for _, notWant := range []string{"ts_omit_netstack", "ts_omit_ssh", "ts_omit_gro", "ts_omit_c2n", "ts_omit_dbus"} {
+	for _, notWant := range []string{"ts_omit_netstack", "ts_omit_ssh", "ts_omit_gro", "ts_omit_c2n", "ts_omit_dbus", "ts_omit_portmapper"} {
 		if release[notWant] {
 			t.Errorf("ReleaseTags contains %q; that feature must stay linked in release builds", notWant)
 		}

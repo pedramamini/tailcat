@@ -54,6 +54,7 @@ var releaseKeep = []featuretags.FeatureTag{
 	"gro",
 	"bakedroots",
 	"androidbin",
+	"portmapper",
 }
 
 // WasmTags returns the comma-joined -tags value for the wasm build,
